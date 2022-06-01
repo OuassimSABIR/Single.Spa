@@ -8,5 +8,4 @@ import { singleSpaPropsSubject } from 'src/single-spa/single-spa-props';
 })
 export class AppComponent {
   title = 'app-home';
-  singleSpaProps$ = singleSpaPropsSubject.asObservable();
 }
