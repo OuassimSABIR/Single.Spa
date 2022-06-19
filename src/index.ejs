@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Root Config</title>
+  <title>SPA OuassimSabir</title>
 
   <!--
     Remove this if you only support browsers that support async/await.
@@ -47,11 +47,10 @@
   <script type="systemjs-importmap">
     {
       "imports": {
-        "@single-spa/welcome": "https://unpkg.com/single-spa-welcome/dist/single-spa-welcome.js",
         "@app/root-config": "//localhost:9000/app-root-config.js",
-        "@app/nav": "//localhost:9001/main.js",
-        "@app/home": "//localhost:9004/main.js",
-        "@app/about": "//localhost:9003/main.js"
+        "@app/nav": "//localhost:9050/main.js",
+        "@app/home": "//localhost:9054/main.js",
+        "@app/about": "//localhost:9052/main.js"
       }
     }
   </script>
@@ -80,22 +79,6 @@
   <script>
     System.import('@app/root-config');
   </script>
-  <!-- <template id="single-spa-layout">
-    <single-spa-router mode="hash">
-      <nav>
-        <application name="@app/nav"></application>
-      </nav>
-      <main>
-        <route path="home">
-          <application name="@app/home"></application>
-        </route>
-        <route path="about">
-          <application name="@app/about"></application>
-        </route>
-      </main>
-    </single-spa-router>
-  </template> -->
-  
   <import-map-overrides-full show-when-local-storage="devtools" dev-libs></import-map-overrides-full>
 </body>
 </html>

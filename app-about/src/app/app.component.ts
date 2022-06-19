@@ -7,7 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app-about';
+  /*
   constructor() {
     throw new Error('This is an error');
-  }
+  }*/
 }

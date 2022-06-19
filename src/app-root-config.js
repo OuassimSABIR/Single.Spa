@@ -6,7 +6,6 @@ import {
 } from "single-spa-layout";
 import microfrontendLayout from "./microfrontend-layout.html";
 
-// const microfrontendLayout = document.getElementById("single-spa-layout");
 const customLoader = `<style>
 .loader {
   border: 16px solid #f3f3f3;
@@ -78,9 +77,6 @@ const config = {
 const data = {
   loaders: {
     customLoader,
-  },
-  props: {
-    user: { fname: "Jane", lname: "John" },
   },
   errors: {
     customError,
