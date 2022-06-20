@@ -6,6 +6,7 @@ import {
 } from "single-spa-layout";
 import microfrontendLayout from "./microfrontend-layout.html";
 
+// Loader
 const customLoader = `<style>
 .loader {
   border: 16px solid #f3f3f3;
@@ -30,7 +31,10 @@ const customLoader = `<style>
 </style>
 <div class="loader"></div>`;
 
+// Error
 const customError = "<h1>Oops! About isn't working right now</h1>";
+
+// Json Format
 const config = {
   mode: "hash",
   routes: [
@@ -84,7 +88,7 @@ const data = {
 };
 
 const routes = constructRoutes(microfrontendLayout, data);
-//const routes = constructRoutes(config);
+//const routes = constructRoutes(config); // Json Format
 const applications = constructApplications({
   routes,
   loadApp({ name }) {
